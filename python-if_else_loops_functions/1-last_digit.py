@@ -4,6 +4,8 @@ number = random.randint(-10000, 10000)
 
 #get last digit of number
 digt = abs(number) % 10
+if number < 0:
+  digt = -digt
 
 #print depending of last digit value
 if digt > 5:

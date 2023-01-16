@@ -2,7 +2,7 @@
 import sys
 
 if __name__ == "__main__":
-    #print numb of args
+    # print numb of args
     if len(sys.argv) == 1:
         print("0 arguments.")
         sys.exit(0)
@@ -10,7 +10,7 @@ if __name__ == "__main__":
         print("{} argument:".format(len(sys.argv)-1))
     else:
         print("{} arguments:".format(len(sys.argv)-1))
-    #enum every args
+    # enum every args
     for i, arg in enumerate(sys.argv, 0):
         if i != 0:
             print("{}: {}".format(i, arg))

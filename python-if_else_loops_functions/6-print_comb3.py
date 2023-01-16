@@ -6,4 +6,4 @@ for j in range(9):
             print(', ', end='')
         print("{}{}".format(j, i), end='')
     i = i + 1
-print("\n")
+print("")

@@ -7,7 +7,3 @@ def no_c(my_string):
             new_list.append(my_string[i])
     new_str = ''.join(new_list)
     return new_str
-
-print(no_c("Best School"))
-print(no_c("Chicago"))
-print(no_c("C is fun!"))

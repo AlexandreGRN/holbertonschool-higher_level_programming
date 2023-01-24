@@ -3,7 +3,6 @@
 # dict value | number
 # test : if string null
 # Return : number int
-
 def roman_to_int(roman_string):
     number = 0
     numberList = []
@@ -12,7 +11,6 @@ def roman_to_int(roman_string):
                  'C': 100, 'D': 500,
                  'M': 1000,
                 }
-
     # test if string or not & null string
     if len(roman_string) == 0:
         return 0
@@ -34,4 +32,4 @@ def roman_to_int(roman_string):
     number += prevValue
     return number
 
- #"pincement de téton"
+    # "pincement de téton"

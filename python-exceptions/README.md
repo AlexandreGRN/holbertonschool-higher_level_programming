@@ -1,4 +1,4 @@
-# Project:/root/holbertonschoolhigher_level_programming/pythonexceptions
+# Project: Python - Exceptions
 ## Functions Prototypes
 Prototypes for functions written in this project:
 

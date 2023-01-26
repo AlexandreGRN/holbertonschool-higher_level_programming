@@ -16,6 +16,7 @@ Prototypes for functions written in this project:
 |9-multiply_by_2.py|def multiply_by_2(a_dictionary):|
 |10-best_score.py|def best_score(a_dictionary):|
 |11-multiply_list_map.py|def multiply_list_map(my_list=[],number=0):|
+|12-roman_to_int.py|def roman_to_int(roman_string):|
 ## Task
 - 0-square_matrix_simple.py:
 	- Computes the square value of all integers of a matrix.
@@ -54,5 +55,5 @@ Prototypes for functions written in this project:
 	- Returns a list with all values multiplied by a number without using any loops.
 
 - 12-roman_to_int.py:
-	- <strong>technical interview preparation</strong>: 
+	- Convert roman number into integer.
 

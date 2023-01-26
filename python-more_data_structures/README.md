@@ -1,4 +1,4 @@
-# Project:/root/holbertonschoolhigher_level_programming/pythonmore_data_structures
+# Project: Python - More Data Structures: Set, Dictionary
 ## Functions Prototypes
 Prototypes for functions written in this project:
 

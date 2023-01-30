@@ -7,13 +7,14 @@ class Square:
     """Empty class"""
     def __init__(self, size=0, position=(0, 0)):
         """initialisation of the size, with some constraint"""
+        pos = position
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        if not isinstance(position, tuple) or len(position) != 2:
+        if not isinstance(pos, tuple) or len(pos) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if not isinstance(position[0],int) or not isinstance(position[1],int):
+        if not isinstance(position[0], int) or not isinstance(position[1], int):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__size = size
         self.__position = position

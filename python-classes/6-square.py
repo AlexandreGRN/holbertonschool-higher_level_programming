@@ -34,22 +34,22 @@ class Square:
         """ Print a square of size size"""
         if (self.__size == 0):
             print()
-        for space in range(self.__position[1]):
-             print()
-        for i in range(self.__size):
-            for space in range(self.__position[0]):
-                print(" ", end='')
-            for j in range(self.__size):
-                print("#", end='')
-            print()
+        else:
+            for space in range(self.__position[1]):
+                print()
+            for i in range(self.__size):
+                for space in range(self.__position[0]):
+                    print(" ", end='')
+                for j in range(self.__size):
+                    print("#", end='')
+                print()
 
-    
     @property
     def position(self):
         return (self.__position)
-    
+
     @position.setter
     def position(self, value):
-        if not isinstance(value, tuple) or len(self.__position) != 2:
+        if not isinstance(value, tuple) or len(self.__position) != 2 or not isinstance(value[0], int) or not isinstance(value[1], int):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value

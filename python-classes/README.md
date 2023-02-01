@@ -26,3 +26,9 @@ Prototypes for functions written in this project:
 - 6-square.py:
 	- Write a class square that defines a square by: (based on 5-square.py)
 
+    def print(self):
+        """ print the rectangle """
+        for i in range(self.__height):
+            for j in range(self.__width):
+                print("#", end='')
+            print()

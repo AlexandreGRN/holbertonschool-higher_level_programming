@@ -75,12 +75,12 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     # ----------------- Miscellaneous
-    
+
     def __del__(self):
         """ thing happening when a class instance is deleted """
         print("Bye rectangle...")
         self.number_of_instances -= 1
-    
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """ returns the biggest rectangle """

@@ -64,6 +64,3 @@ class Rectangle:
             if i != self.__height - 1 and self.__width != 0:
                 string = string + '\n'
         return(string)
-
-    def __repr__(self):
-        return "Rectangle({}, {})".format(self.__width, self.__height)

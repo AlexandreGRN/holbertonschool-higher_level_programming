@@ -1,12 +1,6 @@
 #!/usr/bin/python3
-import sys
-
-class NeedExactlyTwo(ValueError):
-    """ Error raise creation """
-    pass
 
 def add_integer(a, b=98):
-    a = 0
     """ Function that add 2 ints"""
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")

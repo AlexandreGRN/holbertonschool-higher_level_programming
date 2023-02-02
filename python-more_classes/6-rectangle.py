@@ -6,8 +6,7 @@ class Rectangle:
     """ class that will define the rectangle precisely """
     number_of_instances = 0
     def __init__(self, width=0, height=0):
-        self.number_of_instances += 1
-        print(self.number_of_instances)
+        Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -73,12 +72,4 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
-        self.number_of_instances -= 1
-
-my_rectangle_1 = Rectangle(2, 4)
-my_rectangle_2 = Rectangle(2, 4)
-print("{:d} instances of Rectangle".format(Rectangle.number_of_instances))
-del my_rectangle_1
-print("{:d} instances of Rectangle".format(Rectangle.number_of_instances))
-del my_rectangle_2
-print("{:d} instances of Rectangle".format(Rectangle.number_of_instances))
+        Rectangle.number_of_instances -= 1

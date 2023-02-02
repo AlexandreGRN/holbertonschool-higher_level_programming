@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ function divide all elem of a matrix """
 
+
 a = "matrix must be a matrix (list of lists) of integers/floats"
 def matrix_divided(matrix, div):
     """ (je deteste gab) """

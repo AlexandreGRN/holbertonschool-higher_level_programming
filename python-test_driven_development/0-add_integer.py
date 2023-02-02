@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-""" Hello """
-
+"""
+    function to add two int
+"""
 
 def add_integer(a, b=98):
-    """ Function that add 2 ints"""
+    """ function to add two integers """
     try:
-        a = int(a)
+        result = a + b
+        return int(result)
     except:
-        raise TypeError("a must be an integer")
-    try:
-        b = int(b)
-    except:
-        raise TypeError("b must be an integer")
-    return (a+b)
+        if type(a) is not int:
+            raise TypeError ("a must be an integer")
+        else:
+            raise TypeError ("b must be an integer")

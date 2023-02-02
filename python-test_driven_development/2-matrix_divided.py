@@ -19,7 +19,10 @@ def matrix_divided(matrix, div):
         new_baby = []
         for element in row:
             try:
-                new_baby.append(round(element / div, 2))
+                if div == float('inf'):
+                    new_baby.append(0.0)
+                else:
+                    new_baby.append(round(element / div, 2))
             except:
                 if not isinstance(element, (int, float)):
                     raise TypeError(a)

@@ -3,10 +3,10 @@
 
 
 a = "matrix must be a matrix (list of lists) of integers/floats"
+
+
 def matrix_divided(matrix, div):
-    """ (je deteste gab) """
-
-
+    """ Random """
     if matrix == [] or not isinstance(matrix, list):
         raise TypeError(a)
     if not isinstance(div, (int, float) or div is None):

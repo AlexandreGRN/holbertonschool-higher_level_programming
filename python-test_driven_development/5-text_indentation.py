@@ -15,5 +15,3 @@ def text_indentation(text):
     text = text.replace(":", ":\n\n")
 
     print(text, end="")
-
-text_indentation("Holberton.School")

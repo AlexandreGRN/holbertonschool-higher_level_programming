@@ -1,9 +1,18 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 >>> text_indentation("Hello.Hi")
-Hello
+Hello.
 <BLANKLINE>
 Hi
+
+>>> text_indentation("Do you hate: this task? No i hate all the: project")
+Do you hate:
+<BLANKLINE>
+this task?
+<BLANKLINE>
+No i hate all the:
+<BLANKLINE>
+project
 
 >>> text_indentation(12)
 Traceback (most recent call last):

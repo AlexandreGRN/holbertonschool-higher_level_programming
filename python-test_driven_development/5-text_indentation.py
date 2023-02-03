@@ -8,7 +8,6 @@ def text_indentation(text):
     """ Micka == bad """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    time.sleep(1000)
     i = 0
     try:
         while text[i]:

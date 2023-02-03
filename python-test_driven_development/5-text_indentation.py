@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """ Indent and print a text line by line """
-import time
-
 
 
 def text_indentation(text):

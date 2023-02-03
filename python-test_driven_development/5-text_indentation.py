@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """ Indent and print a text line by line """
-
 import time
+
+
+
 def text_indentation(text):
     """ Micka == bad """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-
-    afterNewLine = False
+    time.sleep(1000)
     i = 0
     try:
         while text[i]:
@@ -20,4 +21,3 @@ def text_indentation(text):
                     i += 1
     except:
         pass
-

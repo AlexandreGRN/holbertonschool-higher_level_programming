@@ -16,7 +16,7 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         """ print the rectangle description """
         return ("[Rectangle] {}/{}".format(self.__width, self.__height))
-    
+
     def __repr__(self):
         """ print the rectangle description """
         return ("[Rectangle] {}/{}".format(self.__width, self.__height))

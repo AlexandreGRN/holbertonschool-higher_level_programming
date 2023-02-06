@@ -3,14 +3,7 @@
 
 
 class BaseGeometry:
-    """ represent a rectangle with BaseGeometry """
-
-    def __init__(self, width, height):
-        """ initialisation """
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
-        self.__width = width
-        self.__height = height
+    """ class BaseGeometry """
 
     def area(self):
         """ Nothing useless for now """
@@ -22,3 +15,13 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
+
+class Rectangle(BaseGeometry):
+    """ class: rectangle (parent: BaseGeometry) """
+
+    def __init__(self, width, height):
+        """ initialisation """
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
+        self.__width = width
+        self.__height = height

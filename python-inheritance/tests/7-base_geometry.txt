@@ -39,6 +39,10 @@ TypeError: hi must be an integer
 Traceback (most recent call last):
 TypeError: hi must be an integer
 
+>>> bg.integer_validator("hi", {0, 3})
+Traceback (most recent call last):
+TypeError: hi must be an integer
+
 >>> bg.integer_validator("hi", {0:1, 2:3})
 Traceback (most recent call last):
 TypeError: hi must be an integer

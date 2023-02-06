@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" check for good value value """
+
+
 class BaseGeometry:
     def area(self):
         """ Nothing useless for now """

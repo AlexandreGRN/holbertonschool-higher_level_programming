@@ -3,7 +3,7 @@
 
 
 class BaseGeometry:
-    """ base geometry class"""
+    """ represent a rectangle with BaseGeometry """
 
     def __init__(self, width, height):
         """ initialisation """

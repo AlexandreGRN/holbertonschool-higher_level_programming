@@ -1,2 +1,9 @@
 #!/usr/bin/python3
-def is_same_class(obj,a_class):
+""" sort a list """
+
+
+class MyList(list):
+    """ list class"""
+    def print_sorted(self):
+        """ print sorted """
+        print(sorted(self))

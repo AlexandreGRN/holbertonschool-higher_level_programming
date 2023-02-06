@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-def inherits_from(obj,a_class):
+class BaseGeometry:
+    def area(self):
+        raise Exception("area() is not implemented")

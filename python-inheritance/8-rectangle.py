@@ -6,6 +6,7 @@ class BaseGeometry:
     """ base geometry class"""
 
     def __init__(self, width, height):
+        """ initialisation """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width

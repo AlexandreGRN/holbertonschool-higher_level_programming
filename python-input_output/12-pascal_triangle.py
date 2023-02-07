@@ -6,17 +6,11 @@ def pascal_triangle(n):
         """ for each new row of numbers """
         row = []
         for numbersNumber in range(rowNumber + 1):
-            row.append("hello")
+            if numbersNumber == 0 or numbersNumber == rowNumber:
+                row.append(1)
+            else:
+                num1 = pascal[rowNumber-1][numbersNumber-1]
+                num2 = pascal[rowNumber-1][numbersNumber]
+                row.append(num1 + num2)
         pascal.append(row)
     return pascal
-        
-def print_triangle(triangle):
-    """
-    Print the triangle
-    """
-    for row in triangle:
-        print("[{}]".format(",".join([str(x) for x in row])))
-
-
-if __name__ == "__main__":
-    print_triangle(pascal_triangle(4))

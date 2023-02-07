@@ -1,2 +1,10 @@
 #!/usr/bin/python3
-def append_write(filename=&quot;&quot;,text=&quot;&quot;):
+""" doc """
+
+
+def append_write(filename="", text=""):
+    """ doc """
+    with open(filename, "a", encoding="utf-8") as f:
+        f.write(text)
+        f.close
+    return len(text)

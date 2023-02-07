@@ -4,6 +4,8 @@
 
 def pascal_triangle(n):
     """ create pascal trueiangle"""
+    if n <= 0:
+        return []
     pascal = [[1]]
     for rowNumber in range(1, n):
         """ for each new row of numbers """

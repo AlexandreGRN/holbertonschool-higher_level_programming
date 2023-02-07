@@ -1,2 +1,9 @@
 #!/usr/bin/python3
-def write_file(filename=&quot;&quot;,text=&quot;&quot;):
+""" doc """
+
+
+def write_file(filename="", text=""):
+    """ doc """
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(text)
+        f.close

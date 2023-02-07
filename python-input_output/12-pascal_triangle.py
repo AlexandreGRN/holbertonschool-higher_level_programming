@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" create the triangle """
+
+
 def pascal_triangle(n):
     """ create pascal trueiangle"""
     pascal = [[1]]

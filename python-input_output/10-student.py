@@ -13,9 +13,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """ retrieve a dictionary representation of a student var """
-        if attrs:
+        if not attrs is None:
+            result = {}
             keys = set(attrs).intersection(set(self.__dict__.keys()))
-            result = {k:self.__dict__[k] for k in keys}
+            for k in keys:
+                result[k] = self.__dict__[k]
             return result
         else:
             return self.__dict__

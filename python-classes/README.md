@@ -1,9 +1,5 @@
 # Project:/root/holbertonschoolhigher_level_programming/pythonclasses
-## Functions Prototypes
-Prototypes for functions written in this project:
 
-| FILE  |
- | ------------- |
 ## Task
 - 0-square.py:
 	- Write an empty class square that defines a square:

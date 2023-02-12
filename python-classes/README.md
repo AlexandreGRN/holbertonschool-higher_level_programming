@@ -1,4 +1,4 @@
-# Project:/root/holbertonschoolhigher_level_programming/pythonclasses
+# Project: Classes
 
 ## Task
 - 0-square.py:

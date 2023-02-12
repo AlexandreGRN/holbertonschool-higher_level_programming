@@ -1,22 +1,22 @@
-# Project:/root/holbertonschoolhigher_level_programming/pythoninput_output
+# Project: Python - Input/Output
 ## Functions Prototypes
 Prototypes for functions written in this project:
 
 | FILE  | PROTOTYPE | 
  | ------------- | ------------- |
-|0-read_file.py|def read_file(filename=&quot;&quot;):|
-|1-write_file.py|def write_file(filename=&quot;&quot;,text=&quot;&quot;):|
-|2-append_write.py|def append_write(filename=&quot;&quot;,text=&quot;&quot;):|
+|0-read_file.py|def read_file(filename=""):|
+|1-write_file.py|def write_file(filename="",text=""):|
+|2-append_write.py|def append_write(filename="";,text=""):|
 |3-to_json_string.py|def to_json_string(my_obj):|
 |4-from_json_string.py|def from_json_string(my_str):|
 |5-save_to_json_file.py|def save_to_json_file(my_obj,filename):|
 |6-load_from_json_file.py|def load_from_json_file(filename):|
-|7-add_item.py|def class_to_json(obj):|
-|8-class_to_json.py|def class_to_json(obj):|
-|9-student.py|def class_to_json(obj):|
-|10-student.py|def class_to_json(obj):|
-|11-student.py|def class_to_json(obj):|
-|12-pascal_triangle.py|def class_to_json(obj):|
+|7-add_item.py||
+|8-class_to_json.py||
+|9-student.py||
+|10-student.py||
+|11-student.py||
+|12-pascal_triangle.py||
 ## Task
 - 0-read_file.py:
 	- Reads a text file (utf8) and prints it to stdout:
@@ -37,7 +37,7 @@ Prototypes for functions written in this project:
 	- Writes an object to a text file, using a json representation:
 
 - 6-load_from_json_file.py:
-	- Creates an object from a &ldquo;json file&rdquo;:
+	- Creates an object from a ".json file";:
 
 - 7-add_item.py:
 	- Write a script that adds all arguments to a python list, and then save them to a file:
@@ -46,7 +46,7 @@ Prototypes for functions written in this project:
 	- Returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for json serialization of an object:
 
 - 9-student.py:
-	- Write a class student that defines a student by:
+	- Write a class student that defines a student.
 
 - 10-student.py:
 	- Write a class student that defines a student by: (based on 9-student.py)

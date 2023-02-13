@@ -160,7 +160,7 @@ class Rectangle(Base):
         except:
             pass
         try:
-            newDict['width'] =self.width
+            newDict['width'] = self.width
         except:
             pass
         return newDict

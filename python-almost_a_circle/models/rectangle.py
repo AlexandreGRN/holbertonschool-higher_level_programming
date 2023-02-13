@@ -8,10 +8,10 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     # ---------- Width
     @property
@@ -72,53 +72,3 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-
-try:
-    Rectangle("12", 13)
-    print("TypeError exception not raised")
-    exit(1)
-except TypeError as e:
-    if str(e) != "width must be an integer":
-        print("Wrong exception message: {}".format(e))
-        exit(1)
-except Exception as e:
-    print("Wrong exception: [{}] {}".format(type(e), e))
-    exit(1)
-
-try:
-    Rectangle([13], 13)
-    print("TypeError exception not raised")
-    exit(1)
-except TypeError as e:
-    if str(e) != "width must be an integer":
-        print("Wrong exception message: {}".format(e))
-        exit(1)
-except Exception as e:
-    print("Wrong exception: [{}] {}".format(type(e), e))
-    exit(1)
-
-try:
-    Rectangle(13.12, 13)
-    print("TypeError exception not raised")
-    exit(1)
-except TypeError as e:
-    if str(e) != "width must be an integer":
-        print("Wrong exception message: {}".format(e))
-        exit(1)
-except Exception as e:
-    print("Wrong exception: [{}] {}".format(type(e), e))
-    exit(1)
-
-try:
-    Rectangle({ 'id': 12 }, 13)
-    print("TypeError exception not raised")
-    exit(1)
-except TypeError as e:
-    if str(e) != "width must be an integer":
-        print("Wrong exception message: {}".format(e))
-        exit(1)
-except Exception as e:
-    print("Wrong exception: [{}] {}".format(type(e), e))
-    exit(1)
-
-print("OK", end="")

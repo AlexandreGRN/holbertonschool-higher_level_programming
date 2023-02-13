@@ -80,8 +80,12 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """ print the rectangle area """
+        """ print the rectangle area including coordinate """
+        for y in range(self.y):
+            print("")
         for height in range(self.height):
+            for x in range(self.x):
+                print(" ", end="")
             for width in range(self.width):
                 print("#", end='')
             print()

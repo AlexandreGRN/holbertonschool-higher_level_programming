@@ -142,25 +142,25 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ return a dict of all the variables """
-        dict = dict()
+        newDict = dict()
         try:
-            dict['x'] = self.x
+            newDict['x'] = self.x
         except:
             pass
         try:
-            dict['y'] = self.y
+            newDict['y'] = self.y
         except:
             pass
         try:
-            dict['id'] = self.id
+            newDict['id'] = self.id
         except:
             pass
         try:
-            dict['height'] = self.height
+            newDict['height'] = self.height
         except:
             pass
         try:
-            dict['width'] =self.width
+            newDict['width'] =self.width
         except:
             pass
-        return dict
+        return newDict

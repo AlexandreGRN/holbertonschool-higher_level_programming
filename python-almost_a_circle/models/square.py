@@ -21,7 +21,7 @@ class Square(Rectangle):
         """ size setter """
         if value is None or type(value) != int:
             raise TypeError("width must be an integer")
-        if value < 0:
+        if value <= 0:
             raise ValueError("height must be > 0")
         self.height = value
         self.width = value

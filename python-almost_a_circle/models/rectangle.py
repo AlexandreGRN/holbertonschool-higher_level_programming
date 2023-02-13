@@ -123,6 +123,7 @@ class Rectangle(Base):
         """ return the area value of the rectangle """
         return self.width * self.height
 
+    # ---------- Display
     def display(self):
         """ print the rectangle area including coordinate """
         for y in range(self.y):
@@ -138,3 +139,28 @@ class Rectangle(Base):
         """ print the rectangle infos """
         str = "[Rectangle] ({}) {}/{} - {}/{}"
         return str.format(self.id, self.x, self.y, self.width, self.height)
+
+    def to_dictionary(self):
+        """ return a dict of all the variables """
+        dict = dict()
+        try:
+            dict['x'] = self.x
+        except:
+            pass
+        try:
+            dict['y'] = self.y
+        except:
+            pass
+        try:
+            dict['id'] = self.id
+        except:
+            pass
+        try:
+            dict['height'] = self.height
+        except:
+            pass
+        try:
+            dict['width'] =self.width
+        except:
+            pass
+        return dict

@@ -32,6 +32,27 @@ class Square(Rectangle):
         """ print the square infos """
         str = "[Square] ({}) {}/{} - {}"
         return str.format(self.id, self.x, self.y, self.height)
+    
+    def to_dictionary(self):
+        """ return a newDict of all the variables """
+        newDict = dict()
+        try:
+            newDict['x'] = self.x
+        except:
+            pass
+        try:
+            newDict['y'] = self.y
+        except:
+            pass
+        try:
+            newDict['id'] = self.id
+        except:
+            pass
+        try:
+            newDict['size'] = self.width
+        except:
+            pass
+        return newDict
 
     def update(self, *args, **kwargs):
         """ Update the variables """

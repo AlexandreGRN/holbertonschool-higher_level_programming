@@ -1,19 +1,5 @@
-# Project:/root/holbertonschoolhigher_level_programming/pythonmore_classes
-## Functions Prototypes
-Prototypes for functions written in this project:
+# Project : Python - More Classes and Objects
 
-| FILE  | PROTOTYPE | 
- | ------------- | ------------- |
-|0-rectangle.py|None|
-|1-rectangle.py|None|
-|2-rectangle.py|None|
-|3-rectangle.py|None|
-|4-rectangle.py|None|
-|5-rectangle.py|None|
-|6-rectangle.py|None|
-|7-rectangle.py|None|
-|8-rectangle.py|None|
-|9-rectangle.py|None|
 ## Task
 - 0-rectangle.py:
 	- Write an empty class rectangle that defines a rectangle:

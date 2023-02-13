@@ -13,8 +13,29 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ Update the variables """
+        if len(args) == 0:
+            try:
+                self.id = kwargs['id']
+            except:
+                pass
+            try:
+                self.width = kwargs['width']
+            except:
+                pass
+            try:
+                self.height = kwargs['height']
+            except:
+                pass
+            try:
+                self.x = kwargs['x']
+            except:
+                pass
+            try:
+                self.y = kwargs['y']
+            except:
+                pass
         try:
             self.id = args[0]
         except:

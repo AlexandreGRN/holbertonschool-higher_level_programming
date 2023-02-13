@@ -13,6 +13,29 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    def update(self, *args):
+        """ Update the variables """
+        try:
+            self.id = args[0]
+        except:
+            pass
+        try:
+            self.width = args[1]
+        except:
+            pass
+        try:
+            self.height = args[2]
+        except:
+            pass
+        try:
+            self.x = args[3]
+        except:
+            pass
+        try:
+            self.y = args[4]
+        except:
+            pass
+
     # ---------- Width
     @property
     def width(self):

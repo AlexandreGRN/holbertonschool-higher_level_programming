@@ -33,3 +33,11 @@ class Base:
             except:
                 pass
             f.write(str(list).replace("\'", ""))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ return the list of the json string """
+        if json_string is None:
+            return list()
+        else:
+            return json.loads(json_string)

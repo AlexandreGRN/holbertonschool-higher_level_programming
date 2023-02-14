@@ -41,3 +41,10 @@ class Base:
             return list()
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """ return an instance with all attribute already """
+        if dictionary["height"] != dictionary["width"]:
+            return (cls(dictionary["width"], dictionary["height"], 
+                        dictionary["x"], dictionary["y"], dictionary["id"]))

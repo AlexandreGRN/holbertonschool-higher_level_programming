@@ -27,6 +27,9 @@ class Base:
         """ save to json file """
         with open(str(cls.__name__) + ".json", "w", encoding="utf-8") as f:
             list = []
-            for i in list_objs:
-                list.append(Base.to_json_string(i.to_dictionary()))
+            try:
+                for i in list_objs:
+                    list.append(Base.to_json_string(i.to_dictionary()))
+            except:
+                pass
             f.write(str(list).replace("\'", ""))

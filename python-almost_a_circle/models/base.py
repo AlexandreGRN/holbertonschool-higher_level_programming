@@ -46,5 +46,7 @@ class Base:
     def create(cls, **dictionary):
         """ return an instance with all attribute already """
         if dictionary["height"] != dictionary["width"]:
-            return (cls(dictionary["width"], dictionary["height"], 
-                        dictionary["x"], dictionary["y"], dictionary["id"]))
+            dummy = cls(dictionary["width"], dictionary["height"], 
+                dictionary["x"], dictionary["y"], dictionary["id"])
+            dummy.update(**dictionary)
+            return dummy

@@ -63,4 +63,3 @@ class Base:
                 return list
         except:
             return list
-        

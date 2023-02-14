@@ -45,6 +45,9 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """ return an instance with all attribute already """
-        dummy = cls(1, 1)
+        if "size" in dictionary:
+            dummy = cls(1)
+        else:
+            dummy = cls(1, 1)
         dummy.update(**dictionary)
         return dummy

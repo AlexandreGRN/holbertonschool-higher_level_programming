@@ -86,3 +86,6 @@ class TestBaseClass(unittest.TestCase):
         with self.assertRaises(TypeError) as msg:
             warn = Rectangle.create('Monty Python')
         self.assertEqual("Base.create() takes 1 positional argument but 2 were given", str(msg.exception))
+
+if __name__ == '__main__':
+    unittest.main()

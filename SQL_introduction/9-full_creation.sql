@@ -1,5 +1,5 @@
 -- Create a full database with already existing infos
-CREATE TABLE IF NOT EXISTS second_table(id INT, name VARCHAR(256), score INT)
+CREATE TABLE IF NOT EXISTS second_table(id int, name VARCHAR(256), score int);
 INSERT INTO second_table(
     id,
     name,

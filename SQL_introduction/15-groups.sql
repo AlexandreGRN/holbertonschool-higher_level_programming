@@ -1,5 +1,6 @@
 -- Group by score
 SELECT
+    score,
     COUNT(score)
         AS number
 

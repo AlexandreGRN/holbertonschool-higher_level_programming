@@ -1,6 +1,4 @@
 -- Order by best score first
-USE hbtn_0c_0;
-
 SELECT 
     score,
     name

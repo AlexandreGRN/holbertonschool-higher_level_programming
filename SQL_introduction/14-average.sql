@@ -1,3 +1,3 @@
 -- Average
 SELECT
-    AVG(score) AS Average FROM second_table;
+    AVG(score) AS average FROM second_table;

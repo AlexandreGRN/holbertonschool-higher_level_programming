@@ -1,2 +1,2 @@
 -- Print the full database
-SELECT DATABASE;
+SHOW DATABASE;

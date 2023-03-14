@@ -21,11 +21,9 @@ if len(sys.argv) >= 4:
     SELECT *
         FROM states
         WHERE
-            states.name = '{}'
-            AND
             states.name LIKE '%{}'
         ORDER BY states.id ASC
-    """.format(state_name_searched, state_name_searched[0])
+    """.format(state_name_searched)
 
     cursor.execute(querry)
     # Print

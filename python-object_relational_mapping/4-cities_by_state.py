@@ -8,6 +8,7 @@ if len(sys.argv) >= 4:
     username_ = sys.argv[1]
     password_ = sys.argv[2]
     database_ = sys.argv[3]
+    state_name = sys.argv[4]
 
     db = MySQLdb.connect(host="localhost", user=username_,
                          password=password_, database=database_, port=3306)

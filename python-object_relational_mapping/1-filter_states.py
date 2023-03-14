@@ -14,7 +14,8 @@ if len(sys.argv) == 4:
 
     # Action
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC")
+    cursor.execute("""SELECT *FROM states WHERE name
+                   LIKE BINARY 'N%' ORDER BY states.id ASC""")
 
     # Print
     for i in cursor.fetchall():

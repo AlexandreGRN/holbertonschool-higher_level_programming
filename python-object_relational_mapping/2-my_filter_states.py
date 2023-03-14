@@ -16,7 +16,6 @@ if len(sys.argv) >= 4:
     # Action
     cursor = db.cursor()
 
-
     # SQL Command
     querry = """
     SELECT *
@@ -27,7 +26,6 @@ if len(sys.argv) >= 4:
             states.name LIKE '%{}'
         ORDER BY states.id ASC
     """.format(state_name_searched, state_name_searched[0])
-
 
     cursor.execute(querry)
     # Print

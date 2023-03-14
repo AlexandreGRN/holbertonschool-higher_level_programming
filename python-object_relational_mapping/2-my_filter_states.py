@@ -21,7 +21,7 @@ if len(sys.argv) >= 4:
     SELECT *
         FROM states
         WHERE
-            states.name LIKE '%{}'
+            states.name LIKE BINARY '%{}'
         ORDER BY states.id ASC
     """.format(state_name_searched)
 

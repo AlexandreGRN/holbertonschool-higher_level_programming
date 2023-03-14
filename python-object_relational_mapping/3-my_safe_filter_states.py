@@ -21,11 +21,11 @@ if len(sys.argv) >= 4:
     SELECT *
         FROM states
         WHERE
-            states.name = %s
+            name = %s
         ORDER BY states.id ASC
-    """.format(state_name_searched)
+    """
 
-    cursor.execute(querry)
+    cursor.execute(querry, (state_name_searched, ))
     # Print
     for i in cursor.fetchall():
         print(i)

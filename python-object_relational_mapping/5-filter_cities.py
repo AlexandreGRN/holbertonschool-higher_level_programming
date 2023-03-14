@@ -18,15 +18,18 @@ if len(sys.argv) >= 4:
 
     # SQL Command
     querry = """
-    SELECT cities.id, cities.name, states.name
-        FROM cities, states
-        WHERE cities.state_id = states.id
+    SELECT cities.name
+        FROM cities
+        LEFT JOIN states ON states.id = cities.state_id
+        WHERE states.name = %s
         ORDER BY cities.id ASC
     """
 
-    cursor.execute(querry)
+    cursor.execute(querry, (state_name,))
     # Print
+    nameList = []
     for i in cursor.fetchall():
-        print(i)
-
+        for j in i:
+            nameList.append(j)
+    print(*nameList, sep=", ")
     db.close()

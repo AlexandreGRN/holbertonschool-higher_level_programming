@@ -1,14 +1,23 @@
 #!/usr/bin/python3
-""" doc """
+"""
+    doc
+"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 import sqlalchemy
+"""
+    doc
+"""
 
 Base = declarative_base()
-""" Base """
+"""
+    Base
+"""
 
 class State(Base):
-    """ State """
+    """ 
+        State
+    """
 
     id = Column(Integer,autoincrement=True, unique=True, 
                  nullable=False,primary_key=True)

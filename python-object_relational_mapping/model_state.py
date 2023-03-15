@@ -1,17 +1,15 @@
 #!/usr/bin/python3
-# doc
+""" class state """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import relationship
 
 Base = declarative_base()
-"""
-    State
-"""
+""" State """
 
 
 class State(Base):
-    """ doc """
+    """ State base """
 
     __tablename__ = "states"
     id = Column(Integer,autoincrement=True, unique=True, 

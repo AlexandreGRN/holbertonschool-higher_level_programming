@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-""" class state """
+"""
+    Class definition of a State
+"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import relationship
+from sqlalchemy.orm import relationship
 
 Base = declarative_base()
-""" State """
-
+""""
+    Base class for all tables
+"""
 
 class State(Base):
     """ State base """

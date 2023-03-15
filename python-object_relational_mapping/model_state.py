@@ -2,7 +2,7 @@
 # doc
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-import sqlalchemy
+from sqlalchemy import relationship
 
 Base = declarative_base()
 """
@@ -18,4 +18,4 @@ class State(Base):
                  nullable=False,primary_key=True)
     name = Column(String(128),nullable=False)
 
-    cities = sqlalchemy.relationship("City", backref="states")
+    cities = relationship("City", backref="states")

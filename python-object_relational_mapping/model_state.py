@@ -1,9 +1,16 @@
 #!/usr/bin/python3
+"""
+    State
+"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 import sqlalchemy
 
 Base = declarative_base()
+"""
+    State
+"""
+
 
 class State(Base):
     """ 

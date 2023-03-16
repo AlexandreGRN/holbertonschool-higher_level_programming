@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     query = session().query(State.id, State.name).filter_by(name=str(sys.argv[4]))
     for row in query:
-        print("{}: {}".format(row[0], row[1]))
+        print("{}".format(row[0]))
     # if query.first():
     if query.first() is None:
         print("Not found")

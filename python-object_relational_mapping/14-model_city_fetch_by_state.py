@@ -15,7 +15,7 @@ if __name__ == "__main__":
     session = Session()
     query = session.query(City).order_by(City.id.asc())
     for i in query:
-        print("{}: ({}) {}".format(i.state_id, i.id, i.name))
+        print("{}: ({}) {}".format(i.states.name, i.id, i.name))
 
     session.commit()
     session.close()

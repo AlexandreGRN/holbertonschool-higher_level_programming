@@ -9,9 +9,8 @@ class Square extends Rectangle {
 
   charPrint (c) {
     let line = '';
-    if (!c) {
-      customChara = 'X';
-    } else {
+    let customChara = 'X';
+    if (c) {
       customChara = c;
     }
     for (let printj = 0; printj < this.width; printj++) {

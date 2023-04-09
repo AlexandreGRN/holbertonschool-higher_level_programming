@@ -20,5 +20,5 @@ if (argv.length <= 3) {
       secondBiggest = Number(num);
     }
   });
+  console.log(secondBiggest);
 }
-console.log(secondBiggest);

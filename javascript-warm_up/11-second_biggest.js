@@ -16,6 +16,8 @@ if (argv.length <= 3) {
     if (Number(num) > biggest) {
       secondBiggest = biggest;
       biggest = Number(num);
+    } else if (Number(num) > secondBiggest) {
+      secondBiggest = Number(num);
     }
   });
 }

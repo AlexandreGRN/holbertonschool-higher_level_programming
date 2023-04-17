@@ -6,5 +6,5 @@ const process = require('process');
 
 // Function
 request(process.argv[2], function (error, response, body) {
-    console.log('code: ', response && response.statusCode);
-})
+  console.log('code:', response && response.statusCode);
+});
